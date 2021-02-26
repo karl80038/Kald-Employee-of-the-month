@@ -1,0 +1,25 @@
+<%- include('includes/head.ejs') %>
+</head>
+<body>
+    <form action="/<% if (editing) { %>edit-employee<% } else { %>add-employee<% } %>" method="POST">
+        <table>
+            <tr class="nameField">
+                <td><label for="empName">Name of the employee: </label></td>
+                <td><input type="text" name="empName" id="empName" value="<% if (editing) {%><%= emp.name %><% } %>"></td>
+            </tr>
+            <tr class="URLField">
+                <td><label for="empImg">URL for the image: </label></td>
+                <td><input type="text" name="empImg" id="empImg" value="<% if (editing) {%><%= emp.imgURL %><% }%>"></td> 
+            </tr>
+            <tr class="achieveField">
+                <td><label for="empAchievement">The employee achieved: </label></td>
+                <td><input type="text" name="empAchievement" id="empAchievement" value="<% if (editing) {%><%= emp.achievement %><% }%>"></td>
+            </tr>
+        </table>    
+            <% if(editing) { %>
+                <input type="hidden" value="<%= emp.name %>" name="oldName">
+            <% } %>
+            <button onclick="submitData()"><% if (editing) { %>Change<% } else { %>Submit<% } %></button>
+        </form>
+<%- include('includes/validationscript.ejs') %>        
+<%- include('includes/end.ejs') %>    

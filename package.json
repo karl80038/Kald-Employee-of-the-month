@@ -1,0 +1,26 @@
+{
+  "name": "kald-employee-of-the-month",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karl80038/Kald-Employee-of-the-month.git"
+  },
+  "author": "Karl80038",
+  "license": "LGPL-2.1-or-later",
+  "bugs": {
+    "url": "https://github.com/karl80038/Kald-Employee-of-the-month/issues"
+  },
+  "homepage": "https://github.com/karl80038/Kald-Employee-of-the-month#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "path": "^0.12.7"
+  }
+}

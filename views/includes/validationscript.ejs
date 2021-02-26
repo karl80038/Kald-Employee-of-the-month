@@ -1,0 +1,14 @@
+<script>
+function submitData()
+{
+    var name = document.getElementById("editor");
+    if(document.getElementById('empName').value != "" && document.getElementById('empAchievement').value != "")
+    {
+        document.getElementById("editor").submit();
+    }
+    else
+    {
+        alert("You must provide the name of employee and the employee\'s achievement");
+    }
+}    
+</script>
